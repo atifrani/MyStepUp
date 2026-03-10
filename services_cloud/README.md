@@ -23,8 +23,10 @@ Chaque section comprend :
 ### 1.3 Concepts clés du Cloud AWS
 ### 1.4 Moyens d'accès à AWS
 ### 1.5 lab1: Création d’un compte AWS et découverte de la console
+### 1.6 lab2: Mise en place des bonnes pratiques de sécurité avec AWS IAM
 
+## [Section 2](https://github.com/atifrani/MyStepUp/tree/main/services_cloud/section_2) : Introduction au Réseau AWS
 
-## [Section 2](https://github.com/atifrani/MyStepUp/tree/main/services_cloud/section_2) : Réseau AWS
-
-###  2.1 Concepts réseau dans le cloud
+### 2.1 Concepts réseau dans le cloud
+### 2.2 Architecture réseau AWS
+### 2.3 Lab 3 : Structure réseau aws
