@@ -29,4 +29,11 @@ Chaque section comprend :
 
 ### 2.1 Concepts réseau dans le cloud
 ### 2.2 Architecture réseau AWS
-### 2.3 Lab 3 : Structure réseau aws
+### 2.3 Lab 3 : Structure réseau AWS
+
+## [Section 3](https://github.com/atifrani/MyStepUp/tree/main/services_cloud/section_3) : Introduction à Amazon EC2
+
+### 3.1 Elastic Compute Cloud (EC2)
+### 3.2 Amazon Machine Images (AMI)
+### 3.3 Volumes de stockage EBS
+### 3.4 lab4 : Démarrer et se connecter à une instance EC2
