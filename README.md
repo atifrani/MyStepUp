@@ -1,8 +1,5 @@
 # MyStepUp
 
-```markdown
-# MyStepUp
-
 **MyStepUp** est un dépôt éducatif destiné à centraliser des cours, supports pédagogiques et exemples pratiques pour les étudiants souhaitant développer des compétences dans les domaines du **cloud computing**, de la **data engineering**, et des **pratiques modernes de développement logiciel**.
 
 L’objectif de ce dépôt est de fournir un **parcours structuré et progressif**, combinant concepts théoriques, démonstrations techniques et exercices pratiques.
@@ -100,4 +97,3 @@ L’objectif est d’apprendre en combinant **théorie, pratique et projets conc
 ---
 
 Ce dépôt évoluera progressivement pour intégrer de nouveaux contenus, exercices et études de cas.
-```
