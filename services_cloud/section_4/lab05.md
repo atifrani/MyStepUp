@@ -52,6 +52,10 @@ lab-ec2-s3-image-votreprenom
 
 * **AWS Region** : choisissez la même région que votre EC2
 
+```
+eu-west-3
+```
+
 Laissez les autres paramètres par défaut.
 
 Cliquez sur **Create bucket**.
