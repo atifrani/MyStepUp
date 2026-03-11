@@ -1,4 +1,4 @@
-# Lab : Déployer un site web statique sur Amazon S3
+# Lab6 : Déployer un site web statique sur Amazon S3
 
 Dans ce laboratoire, vous allez apprendre à **héberger un site web statique en utilisant Amazon S3**. Amazon S3 permet de configurer un **bucket comme serveur web statique** pour héberger des pages HTML, CSS, JavaScript et des images.
 

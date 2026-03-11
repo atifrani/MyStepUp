@@ -12,6 +12,8 @@ Les points qui seront étudiés sont les suivants :
 * Gestion des permissions
 * Versionning des objets
 * Tarification du service S3
+* Lab5:Héberger une page web sur EC2 et afficher une image stockée dans un bucket S3 public
+* lab6:  Déployer un site web statique sur Amazon S3
 
 ---
 
