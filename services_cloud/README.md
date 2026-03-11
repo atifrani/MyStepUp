@@ -37,3 +37,13 @@ Chaque section comprend :
 ### 3.2 Amazon Machine Images (AMI)
 ### 3.3 Volumes de stockage EBS
 ### 3.4 lab4 : Démarrer et se connecter à une instance EC2
+
+
+## [Section 3](https://github.com/atifrani/MyStepUp/tree/main/services_cloud/section_4) : Introduction à Amazon S3
+
+### 4.1 Introduction à S3
+### 4.2 Les classes de stockage S3
+### 4.3 Tarification du service S3
+### 4.4 La gestion du cycle de vie d’un objet
+### 4.5 Gestion des permissions
+### 4.6 Versionning des objets
