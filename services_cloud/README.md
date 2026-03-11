@@ -39,7 +39,7 @@ Chaque section comprend :
 ### 3.4 lab4 : Démarrer et se connecter à une instance EC2
 
 
-## [Section 3](https://github.com/atifrani/MyStepUp/tree/main/services_cloud/section_4) : Introduction à Amazon S3
+## [Section 4](https://github.com/atifrani/MyStepUp/tree/main/services_cloud/section_4) : Introduction à Amazon S3
 
 ### 4.1 Introduction à S3
 ### 4.2 Les classes de stockage S3
@@ -47,3 +47,13 @@ Chaque section comprend :
 ### 4.4 La gestion du cycle de vie d’un objet
 ### 4.5 Gestion des permissions
 ### 4.6 Versionning des objets
+### Lab5:Héberger une page web sur EC2 et afficher une image stockée dans un bucket S3 public
+## lab6:  Déployer un site web statique sur Amazon S3
+
+
+## [Section 5](https://github.com/atifrani/MyStepUp/tree/main/services_cloud/section_5) : Introduction à Amazon RDS
+
+### 5.1 Introduction à RDS**
+### 5.2 Types de bases de données RDS
+### 5.3 Tarification du service RDS
+### 5.4 lab7: Lancer une base de données RDS
