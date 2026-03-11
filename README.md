@@ -6,12 +6,19 @@ L’objectif de ce dépôt est de fournir un **parcours structuré et progressif
 
 ## À propos de votre instructeur:  
 
+<h1 align="center">Axel Tifrani</h1>
+<h3 align="center">Cloud • Data • AI Solution Architect</h3>
+<p align="center">
+  <img src="images/axel.jpg" width="180" style="border-radius:50%">
+</p>
+
+
 + Architecte solutions Data et Cloud.
 + 15 ans d'expériences en big data et cloud computing.
 + Professeur en Big Data et cloud computing (ECE, ESME, MBA ESG, ESCP).
 + Fondateur de Logbrain (Cabinet de conseil en big data et cloud computing).
 
-![alt text](images/axel.jpg)  
+
 
 
 ## Objectifs du dépôt
