@@ -289,7 +289,7 @@ ec2_webapp
 Ouvrez un navigateur et entrez l’adresse suivante :
 
 ```
-http://Public-IP/ec2_webapp/app
+http://Public-IP/ec2_webapp
 ```
 
 Remplacez **Public-IP** par l’adresse IP publique de votre instance EC2.
@@ -297,7 +297,7 @@ Remplacez **Public-IP** par l’adresse IP publique de votre instance EC2.
 Exemple :
 
 ```
-http://54.82.14.23/ec2_webapp/app
+http://54.82.14.23/ec2_webapp
 ```
 
 ## Étape 15 : Supprimer l’instance EC2 (nettoyage des ressources)
