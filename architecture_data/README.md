@@ -1,21 +1,6 @@
 
 # Introduction: 
 
-## À propos de votre instructeur:  
-
-+ Architecte solutions Data et Cloud.
-+ 15 ans d'expériences en big data et cloud computing.
-+ Professeur en Big Data et cloud computing (ECE, ESME, MBA ESG, ESCP).
-+ Fondateur de Logbrain (Cabinet de conseil en big data et cloud computing).
-
-![alt text](images/axel.jpg)  
-
-## À propos de vous:  
-
-+ Expériences en analyse des données.  
-+ Expériences dans les technologies de Big Data.  
-+ Expériences dans le cloud computing.  
-
 ## Qu'est-ce que les données?  
 
 Les données sont des **éléments bruts** qui peuvent être abstraits des phénomènes mesurés et enregistrés de diverses manières.​  
@@ -23,7 +8,7 @@ Cependant, en général, les données se réfèrent aux éléments; Extrait par 
 
 Les données peuvent prendre la forme de **texte, observations, figures, images, nombres, graphiques ou symboles**. Par exemple, les données peuvent inclure des prix individuels, des poids, des adresses, des âges, des noms, des températures, des dates ou des distances.  
 
-![alt text](images/data.jpg)
+![alt text](../images/data.jpg)
 
 ## Qu'est-ce que l'information?
 
@@ -31,7 +16,7 @@ Les informations sont définies comme **des connaissances acquises par l'étude,
 
 Un ensemble de données pourrait inclure des lectures de température dans un emplacement sur plusieurs années. Sans aucun contexte supplémentaire, ces températures n'ont aucun sens. Cependant, lorsque vous analysez et organisez ces informations, vous pouvez déterminer les modèles de température saisonnière ou même les tendances climatiques plus larges.Ce n'est que lorsque les données sont organisées et compilées de manière utile que cela peut fournir des informations bénéfiques pour les autres.  
 
-![alt text](images/informations.jpg)
+![alt text](../images/informations.jpg)
 
 ## L'ère de l'information:  
 
@@ -52,11 +37,11 @@ Parmi les principales observations (et encore une fois, ces statistiques concern
 * Zoom héberge 856 minutes de webinaires
 * Les utilisateurs de TikTok regardent 167 millions de clips  
 
-![alt text](images/dvs.png)
+![alt text](../images/dvs.png)
 
 L'ordinateur utilise le système binaire. 1024 a été utilisé comme multiplicateur car il est la 10e puissance de deux.  
 
-![alt text](images/size.png)
+![alt text](../images/size.png)
 
 ## Introduction à la business intelligence:  
 
@@ -138,11 +123,11 @@ produit, …).
 selon différentes dimensions pour construire des indicateurs indispensables au pilotage de
 l’entreprise
 
-![cas usages data](images/use_cases.png)
+![cas usages data](../images/use_cases.png)
 
 ## Architecture décisionnelle (Business Intelligence):  
 
-![synthèse d’une architecture décisionnelle](images/archi_bi.png)
+![synthèse d’une architecture décisionnelle](../images/archi_bi.png)
 
 Il existe plusieurs architectures possibles pour un système décisionnel, l'architecture présentée
 est constituée de 5 couches:  
@@ -166,7 +151,7 @@ Le mot à la mode en informatique en **2012**, le **Big Data**, est devenu viabl
 
 Pour les grandes entreprises, telles que Walmart ou Google, ce pouvoir est à la portée de tous depuis un certain temps, mais à un coût faramineux. Le matériel informatique, les architectures cloud et les logiciels open source d'aujourd'hui mettent le traitement du Big Data à la portée d'entreptises moins bien dotés en ressources informatique.
 
-![alt text](images/4v.png)
+![alt text](../images/4v.png)
 
 * **Le volume** est la quantité de données, et il comprend les données provenant de sources traditionnelles et non traditionnelles. Par exemple, il y a aujourd'hui l'équivalent de 100 téraoctets de données téléchargées sur Facebook chaque jour. 100 téraoctets équivalent à l'espace de stockage de 33 millions de chansons.
 
@@ -178,25 +163,25 @@ Pour les grandes entreprises, telles que Walmart ou Google, ce pouvoir est à la
 
 **Le marché des editeurs de solutions Big Data**  
 
-![alt text](images/providers.png)
+![alt text](../images/providers.png)
 
 #### Qu'est-ce que les données structurées ?
 Le terme « données structurées » désigne les données qui résident dans un champ fixe au sein d'un fichier ou d'un enregistrement. Les données structurées sont généralement stockées dans une **base de données relationnelle (SGBDR)**. Elles peuvent être constituées de nombres et de texte, et leur origine peut être automatique ou manuelle, à condition qu'elles se trouvent dans une structure SGBDR. Cela dépend de la création d'un modèle de données, de la définition des types de données à inclure et de la manière de les stocker et de les traiter.  
 Le langage de programmation utilisé pour les données structurées est **SQL (Structured Query Language)**. Développé par **IBM en 1974**, SQL gère les bases de données relationnelles. Les noms, les adresses, les numéros de carte de crédit, la géolocalisation, etc. sont des exemples typiques de données structurées.
 
-![alt text](images/datastructree.png)
+![alt text](../images/datastructree.png)
 
 #### Qu'est-ce que les données non structurées ?
 Les données non structurées sont plus ou moins toutes les données qui ne sont pas structurées. Même si les données non structurées peuvent avoir une structure interne native, elles ne sont pas structurées de manière prédéfinie. Il n'existe pas de modèle de données ; les données sont stockées dans leur format natif.
 Les exemples typiques de données non structurées sont les médias enrichis, le texte, l'activité sur les réseaux sociaux, les images de surveillance, etc.  
 La quantité de données non structurées est bien plus importante que celle des données structurées. Les données non structurées représentent **80 %** ou plus de toutes les données d'entreprise, et ce pourcentage ne cesse de croître. Cela signifie que les entreprises qui ne prennent pas en compte les données non structurées passent à côté de nombreuses informations commerciales précieuses.
 
-![alt text](images/donnenonstucture.png)
+![alt text](../images/donnenonstucture.png)
 
 
 #### Données structurées vs Données non structurées:  
 
-![alt text](images/ds-vs-dns.png)
+![alt text](../images/ds-vs-dns.png)
 
 ## Introduction Data warehouse:  
 
@@ -297,7 +282,7 @@ dimension ; une ou plusieurs mesures .
 * **Plusieurs tables de dimension** : descripteurs des 
 dimensions.
 
-![schema en etoile](images/star.png)
+![schema en etoile](../images/star.png)
 
 * **Une table de faits**: Les faits sont indicateurs sur
 quoi va porter l'analyse. C’est une table qui
@@ -355,7 +340,7 @@ peut appartenir à plusieurs catégories).
 **Modèle en flocon = modèle en étoile +
 normalisation des dimensions.**
 
-![schema en flocon](images/snow.png)  
+![schema en flocon](../images/snow.png)  
 
 **Avantages:**
 -------------  
@@ -375,7 +360,7 @@ des dimensions communes. Un modèle en constellation
 comprend donc plusieurs tables de faits et des tables de
 dimensions communes ou non à ces tables de faits.  
 
-![schema en constellation](images/galaxy.png)  
+![schema en constellation](../images/galaxy.png)  
 
 **Avantages:**
 --------------
@@ -395,7 +380,7 @@ dimensions communes ou non à ces tables de faits.
 **L'ETL (Extraction Transformation Loading)** est le processus de copie des données depuis les tables des systèmes transactionnels vers les tables du modèle décisionnel du data warehouse.  
 
 
-![ETL](images/elt.png)  
+![ETL](../images/elt.png)  
 
 L’ETL est un outil fondamental pour la construction des entrepôts de données.  
 * Il permet d’extraire les données des systèmes hétérogènes sources, les normalisent et les rendent
@@ -428,7 +413,7 @@ fois la même donnée.
 
 ## Choisir un outil ETL:
 
-![ETL TOOLS](images/etl-tools.png)  
+![ETL TOOLS](../images/etl-tools.png)  
 
 Pour bien choisir une solution ETL, plusieurs critères sont à considérer:
 1. L'indépendance aux différents OS: Linux, Windows, AIX,…
@@ -452,7 +437,7 @@ Comprenons rapidement les différences entre ces deux méthodes.
 
 Dans ces deux méthodes on commence par l’extraction des données provenant d’une ou plusieurs sources : API, base de données, ERP, fichiers plats...  
 
-![ETL VS ELT](images/etlvselt.png)
+![ETL VS ELT](../images/etlvselt.png)
 
 ### Résumé des différences : ETL versus ELT
 |Catégorie   | ETL   | ELT    |
@@ -468,14 +453,14 @@ La transformation a lieu dans l'entrepôt de données cible. |
 
 ## Introcution to Snowflake (Modern Data Warehouse):    
 
-![snowflake architecture](images/dwh-evol.png)
+![snowflake architecture](../images/dwh-evol.png)
 
 Snowflake est une plateforme d’entrepôt de données en mode SaaS qui centralise, dans le cloud, le stockage et le traitement de données structurées et semi-structurées. La génération croissante de données produites dans le monde entier nécessite une infrastructure moderne pour traiter les données. 
 
 Conçu de A à Z, Snowflake tire parti de l'élasticité offerte par le cloud et est véritablement révolutionnaire à tous égards.  
 L'élasticité du cloud est au cœur de Snowflake, ce qui rend son architecture unique et sa proposition de valeur difficiles à concurrencer sur le marché.  
 
-![snowflake architecture](images/snow-overview.png)
+![snowflake architecture](../images/snow-overview.png)
 
 ### Concepts clés et architecture:  
 
@@ -498,7 +483,7 @@ L’architecture unique de Snowflake se compose de trois couches clés :
 * Services Cloud
 
 
-![snowflake architecture](images/snowflake-architecture.png)
+![snowflake architecture](../images/snowflake-architecture.png)
 
 #### Stockage de bases de données:
 Lorsque les données sont chargées dans Snowflake, Snowflake réorganise ces données dans son format interne optimisé, compressé et en colonnes. Snowflake stocke ces données optimisées dans le stockage Cloud.  
@@ -525,7 +510,7 @@ La couche de services Cloud constitue un ensemble de services qui coordonnent le
 
 * Contrôle d’accès
 
-![snowflake architecture](images/snow-services.png)
+![snowflake architecture](../images/snow-services.png)
 
 #### Virtual warehouses:  
 
@@ -555,7 +540,7 @@ Snowflake prend en charge plusieurs méthodes de connexion au service :
 
 * Des connecteurs tiers qui peuvent être utilisés pour connecter des applications, telles que des outils ETL (p. ex. Informatica) et des outils BI (comme ThoughtSpot) à Snowflake.
 
-![snowflake architecture](images/warehouse-size.png)
+![snowflake architecture](../images/warehouse-size.png)
 
 
 #### Time Travel for data:
@@ -567,13 +552,13 @@ Snowflake prend en charge plusieurs méthodes de connexion au service :
 * CLONE pour la recréer
 * UNDROP récupère après une suppression accidentelle
 
-![snowflake architecture](images/time-travel.png)
+![snowflake architecture](../images/time-travel.png)
 
 #### Zero-Copy Cloning:  
 
 Crée une copie d'un objet existant dans le système. Cette commande est principalement utilisée pour créer des clones sans copie de bases de données, de schémas et de tables.  
 
-![snowflake architecture](images/clonage.png)
+![snowflake architecture](../images/clonage.png)
 
 * Crée une copie indépendante des données pour les expériences
 
