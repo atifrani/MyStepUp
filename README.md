@@ -4,7 +4,7 @@
 
 L’objectif de ce dépôt est de fournir un **parcours structuré et progressif**, combinant concepts théoriques, démonstrations techniques et exercices pratiques.
 
-## À propos de votre instructeur:  
+## À propos de votre instructeur:  [Portfolio](https://atifrani.github.io/)
 
 <h1 align="center">Axel Tifrani</h1>
 <h3 align="center">Cloud • Data • AI Solution Architect</h3>
