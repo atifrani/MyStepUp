@@ -10,6 +10,42 @@ Grâce à **Snowpark**, **Snowflake ML** et les **Snowflake Notebooks**, les dat
 
 Dans ce workshop, vous allez utiliser Snowflake comme plateforme complète de **Data Engineering et Machine Learning** en développant vos modèles ML directement dans l’environnement Snowflake.
 
+
+## Description du dataset
+
+Ce dataset fournit des informations sur les caractéristiques de différentes maisons ainsi que leurs prix de vente. Grâce à ces données, il est possible de comprendre comment des facteurs tels que le nombre de chambres, le nombre de salles de bain, la surface ou encore l’état d’ameublement influencent le prix d’une maison.
+
+L’un des problèmes les plus fréquents dans le secteur immobilier consiste à déterminer quels facteurs influencent la valeur d’un bien.
+
+Ce dataset peut être utilisé pour construire des modèles de prédiction capables d’estimer le prix d’une propriété en fonction de certaines caractéristiques.
+Contenu du dataset
+
+* **price** : Prix de vente de la maison
+
+* **area** : Surface totale (en Métre carrés)
+
+* **bedrooms** : Nombre de chambres
+
+* **bathrooms** : Nombre de salles de bain
+
+* **stories** : Nombre total d’étages dans la maison
+
+* **mainroad** : Indique si la maison est reliée à une route principale (oui/non)
+
+* **guestroom** : Présence d’une chambre d’amis
+
+* **basement** : Présence d’un sous-sol
+
+* **hotwaterheating** : Indique si un système de chauffage à eau chaude est disponible
+
+* **airconditioning** : Indique si la maison dispose de la climatisation
+
+* **parking** : Nombre de places de stationnement
+
+* **prefarea** : Indique si la maison est située dans une zone privilégiée
+
+* **furnishingstatus** : État d’ameublement de la maison (meublée, semi-meublée, non meublée)
+
 # Objectifs
 
 * Charger et préparer un dataset dans Snowflake
@@ -27,7 +63,7 @@ Dans ce workshop, vous allez utiliser Snowflake comme plateforme complète de **
 
 Vous êtes **data engineer / data scientist** dans une entreprise qui souhaite exploiter ses données analytiques pour créer un modèle prédictif.
 
-Les données sont stockées dans **un bucket S3**, et votre objectif est de construire un pipeline complet permettant de :
+Les données sont stockées dans **un bucket S3: s3://logbrain-datalake/datasets/house_price/**, et votre objectif est de construire un pipeline complet permettant de :
 
 1. Charger et explorer les données
 2. Explorer vos données
