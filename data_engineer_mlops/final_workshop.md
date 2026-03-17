@@ -160,3 +160,7 @@ Afin de rendre le modèle accessible aux utilisateurs, vous allez développer un
 * Un **Notebook Snowflake** contenant le pipeline ML complet
 * Un **modèle entraîné** sur le dataset
 * Une **analyse des performances du modèle** dans le README.
+
+Envoyez votre livrable avec intitulé:  
+**MBAESG_[PROMOTION]_[CLASSE]_EVALUATION_DATAENGINEER_MLOPS**   
+avec la liste des membres du groupe à l'adresse suivante : **axel@logbrain.fr**
