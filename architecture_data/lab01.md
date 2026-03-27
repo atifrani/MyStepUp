@@ -520,7 +520,7 @@ select
 from CITIBIKE.PUBLIC.TRIPS
 left join CITIBIKE.PUBLIC.WEATHER
   on date("obsTime") = date(starttime)
-where "weatherCondition" is not null
+where "weatherCondition" is not null and "name"='New York / Wall Street'
 group by 1
 order by 2 desc;
 ```
