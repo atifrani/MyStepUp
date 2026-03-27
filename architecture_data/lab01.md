@@ -437,8 +437,12 @@ select count(*) from trips
    ```
 2. **Stage S3 JSON** :
    ```sql
+   --create stage
    create or replace stage NYC_WEATHER
      url='s3://logbrain-datalake/datasets/weather-nyc-json/';
+    ```
+    ```
+    -- list stage
    list @NYC_WEATHER;
    ```
 3. **Chargement JSON** :
