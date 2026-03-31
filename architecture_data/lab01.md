@@ -437,8 +437,12 @@ select count(*) from trips
    ```
 2. **Stage S3 JSON** :
    ```sql
+   --create stage
    create or replace stage NYC_WEATHER
      url='s3://logbrain-datalake/datasets/weather-nyc-json/';
+    ```
+    ```
+    -- list stage
    list @NYC_WEATHER;
    ```
 3. **Chargement JSON** :
@@ -516,7 +520,7 @@ select
 from CITIBIKE.PUBLIC.TRIPS
 left join CITIBIKE.PUBLIC.WEATHER
   on date("obsTime") = date(starttime)
-where "weatherCondition" is not null
+where "weatherCondition" is not null and "name"='New York / Wall Street'
 group by 1
 order by 2 desc;
 ```
