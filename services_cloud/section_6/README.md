@@ -183,6 +183,8 @@ Ce rôle permet à la fonction Lambda :
 Vous pouvez modifier le code de la fonction pour calculer une surface :
 
 ```python
+import json
+
 def lambda_handler(event, context):
     length = event['length']
     width = event['width']
