@@ -201,10 +201,21 @@ Pour ce lab, vous avez deux choix :
 ## Option simple pour le lab
 
 Créer un package ZIP contenant :
+```
+mkdir package
+ 
+pip install \
+  --platform manylinux2014_x86_64 \
+  --target=package \
+  --implementation cp \
+  --python-version 3.13 \
+  --only-binary=:all: \
+  psycopg2-binary
 
-* `lambda_function.py`
-* la bibliothèque `psycopg2-binary` ou `psycopg`
+  cd .\package\  
 
+  zip -r ../load-s3-rds.zip .      
+```
 ## Option plus propre
 
 Créer une **Lambda layer** contenant la dépendance PostgreSQL, puis l’attacher à la fonction.

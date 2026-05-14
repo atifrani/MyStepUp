@@ -1,148 +1,303 @@
-## Introduction à Amazon DynamoDB
+# Lab : Déployer une application web serverless avec AWS Lambda, DynamoDB et API Gateway
 
-**Amazon DynamoDB** est un service de base de données **NoSQL entièrement managé** proposé par AWS. Contrairement aux bases de données relationnelles, DynamoDB permet de stocker et de gérer des données de manière **flexible, scalable et très performante**, sans avoir à gérer l’infrastructure.
+## Objectif du laboratoire
 
-DynamoDB est conçu pour offrir :
+Dans ce laboratoire, les étudiants vont apprendre à déployer une **application web serverless complète** en utilisant :
 
-* une **latence très faible (millisecondes)**
-* une **scalabilité automatique**
-* une **haute disponibilité**
-* une gestion entièrement **serverless**
+* **AWS Lambda** (logique applicative)
+* **Amazon DynamoDB** (base de données NoSQL)
+* **Amazon API Gateway** (exposition de l’application via HTTP)
 
-### Fonctionnement de DynamoDB
+À la fin du laboratoire, l’application sera accessible via une **URL publique**.
 
-DynamoDB stocke les données sous forme de :
-
-* **tables**
-* **items (éléments)** → équivalent d’une ligne
-* **attributes (attributs)** → équivalent des colonnes
-
-Cependant, contrairement aux bases relationnelles, les données ne sont pas strictement structurées. Chaque item peut avoir des attributs différents.
-
-### Exemple de structure
+# Architecture du laboratoire
 
 ```text
-Table : Users
-
-Item 1 :
-{
-  user_id: 1,
-  name: "Alice",
-  age: 25
-}
-
-Item 2 :
-{
-  user_id: 2,
-  name: "Bob",
-  email: "bob@example.com"
-}
+Navigateur Web
+      |
+API Gateway
+      |
+AWS Lambda (Python)
+      |
+DynamoDB
 ```
 
-👉 Les deux items n’ont pas exactement les mêmes champs.
+# Partie 1 : Création du rôle IAM pour Lambda
+
+## Étape 1 : Accéder à IAM
+
+1. Connectez-vous à la **console AWS**
+2. Sélectionnez la région :
+
+```text
+eu-west-3
+```
+
+3. Ouvrez le service **IAM**
+
+## Étape 2 : Créer un rôle
+
+1. Cliquez sur **Roles**
+2. Cliquez sur :
+
+```text
+Create role
+```
+
+3. Sélectionnez :
+
+```text
+Lambda
+```
+
+4. Cliquez sur **Next**
 
 ---
 
-## Cas d’utilisation de DynamoDB
+## Étape 3 : Ajouter les permissions
 
-DynamoDB est particulièrement adapté pour :
+Sélectionnez la politique suivante :
 
-* applications web à forte charge
-* applications mobiles
-* jeux en ligne
-* IoT (objets connectés)
-* systèmes nécessitant des performances élevées
+```text
+AWSLambdaBasicExecutionRole
+AmazonDynamoDBFullAccess
+```
 
----
+5. Cliquez sur **Next**
 
-## Différence entre DynamoDB et RDS PostgreSQL
+## Étape 4 : Finaliser le rôle
 
-Il est essentiel de bien comprendre la différence entre une base **NoSQL (DynamoDB)** et une base **relationnelle SQL (RDS PostgreSQL)**.
+Nom du rôle :
 
-### 1. Modèle de données
+```text
+dynamolambdarole
+```
 
-| DynamoDB                         | RDS PostgreSQL                      |
-| -------------------------------- | ----------------------------------- |
-| NoSQL                            | Relationnel (SQL)                   |
-| Données flexibles (schéma libre) | Schéma structuré (tables, colonnes) |
-| Pas de relations complexes       | Relations entre tables (JOIN)       |
+6. Cliquez sur **Create role**
 
-👉 DynamoDB est plus flexible, PostgreSQL est plus structuré.
+# Partie 2 : Création de la fonction Lambda
 
----
+## Étape 5 : Créer la fonction
 
-### 2. Scalabilité
+1. Ouvrez le service **AWS Lambda**
+2. Cliquez sur :
 
-| DynamoDB                        | RDS PostgreSQL                          |
-| ------------------------------- | --------------------------------------- |
-| Scalabilité automatique         | Scalabilité manuelle (verticale)        |
-| Conçu pour des charges massives | Limité par les ressources de l’instance |
+```text
+Create function
+```
 
-👉 DynamoDB est idéal pour les applications à très grande échelle.
+3. Choisissez :
 
----
+```text
+Author from scratch
+```
 
-### 3. Performance
+## Étape 6 : Configurer la fonction
 
-| DynamoDB                   | RDS PostgreSQL                                    |
-| -------------------------- | ------------------------------------------------- |
-| Latence très faible (ms)   | Bonne performance mais dépend de l’infrastructure |
-| Optimisé pour accès rapide | Optimisé pour requêtes complexes                  |
+* **Function name**
 
-👉 DynamoDB est optimisé pour la vitesse, PostgreSQL pour la complexité des requêtes.
+```text
+formularwebapp
+```
 
----
+* **Runtime**
 
-### 4. Requêtes
+```text
+Python 3.9
+```
 
-| DynamoDB                      | RDS PostgreSQL                  |
-| ----------------------------- | ------------------------------- |
-| Pas de SQL (requêtes simples) | Utilise SQL (requêtes avancées) |
-| Pas de JOIN                   | Support des JOIN                |
+* **Execution role**
 
-👉 PostgreSQL est plus adapté pour les analyses complexes.
+```text
+Use existing role → dynamolambdarole
+```
 
----
+4. Cliquez sur **Create function**
 
-### 5. Gestion
+## Étape 7 : Déployer le code
 
-| DynamoDB                    | RDS PostgreSQL                   |
-| --------------------------- | -------------------------------- |
-| Serverless (aucune gestion) | Gestion partielle (instance RDS) |
-| Pas de maintenance          | Maintenance gérée mais présente  |
+1. Téléchargez le projet :
 
----
+```text
+https://github.com/atifrani/lambda_dynamodb_webapp
+```
 
-### 6. Cas d’usage
+2. Dans Lambda :
 
-| DynamoDB                | RDS PostgreSQL                |
-| ----------------------- | ----------------------------- |
-| Applications temps réel | Applications métier           |
-| Données non structurées | Données relationnelles        |
-| IoT, gaming, mobile     | ERP, CRM, systèmes financiers |
+* Cliquez sur **Upload from**
+* Choisissez **.zip file**
+* Importez le fichier
 
----
+La fonction Lambda contient :
 
-## Résumé
+* la logique métier
+* l’interface HTML de l’application
 
-* **DynamoDB** :
+# Partie 3 : Création de la table DynamoDB
 
-  * base NoSQL
-  * très scalable
-  * rapide
-  * flexible
-  * idéale pour applications modernes à grande échelle
+## Étape 8 : Accéder à DynamoDB
 
-* **RDS PostgreSQL** :
+1. Ouvrez le service :
 
-  * base relationnelle SQL
-  * adaptée aux données structurées
-  * support des relations complexes
-  * idéale pour applications métier
+```text
+DynamoDB
+```
 
-👉 Le choix entre DynamoDB et RDS dépend principalement :
+2. Cliquez sur **Tables → Create table**
 
-* du **type de données**
-* du **niveau de scalabilité**
-* de la **complexité des requêtes**
-* des **besoins applicatifs**
+## Étape 9 : Configurer la table
+
+* **Table name**
+
+```text
+formular
+```
+
+* **Partition key**
+
+```text
+email (String)
+```
+
+👉 Cette clé identifie de manière unique chaque enregistrement.
+
+3. Laissez les paramètres par défaut (Free Tier compatible)
+4. Cliquez sur **Create table**
+
+# Partie 4 : Création de l’API Gateway
+
+## Étape 10 : Créer une API
+
+1. Ouvrez **API Gateway**
+2. Cliquez sur :
+
+```text
+Build
+```
+
+3. Sélectionnez :
+
+```text
+REST API
+```
+
+## Étape 11 : Configurer l’API
+
+* **API Name**
+
+```text
+dynamowebapi
+```
+
+* **Endpoint type**
+
+```text
+Regional
+```
+
+Cliquez sur **Create API**
+
+## Étape 12 : Créer une méthode GET
+
+1. Cliquez sur **Actions → Create Method**
+2. Sélectionnez :
+
+```text
+GET
+```
+
+3. Configuration :
+
+* Integration type : Lambda
+* Activer : **Lambda Proxy integration**
+* Lambda function : `squarewebapp`
+
+4. Cliquez sur **Save**
+
+5. Autorisez API Gateway à appeler Lambda
+
+## Étape 13 : Créer une méthode POST
+
+Répétez les mêmes étapes pour :
+
+```text
+POST
+```
+
+## Étape 14 : Déployer l’API
+
+1. Cliquez sur :
+
+```text
+Actions → Deploy API
+```
+
+2. Configurez :
+
+* Stage :
+
+```text
+dev
+```
+
+3. Cliquez sur **Deploy**
+
+## Étape 15 : Récupérer l’URL
+
+Copiez l’URL :
+
+```text
+Invoke URL
+```
+
+Exemple :
+
+```text
+https://xxxx.execute-api.eu-west-3.amazonaws.com/dev
+```
+
+# Partie 5 : Tester l’application
+
+## Étape 16 : Accéder à l’application
+
+1. Ouvrez un navigateur
+2. Accédez à :
+
+```text
+Invoke URL
+```
+
+## Résultat attendu
+
+* une interface web (formulaire) s’affiche
+* les données saisies sont envoyées à **Lambda**
+* Lambda enregistre les données dans **DynamoDB**
+* les données sont persistées sans serveur
+
+# Vérification
+
+L’étudiant doit vérifier que :
+
+* Lambda s’exécute correctement
+* DynamoDB contient les données
+* API Gateway répond correctement
+* aucun message d’erreur dans **CloudWatch Logs**
+
+# Nettoyage des ressources
+
+À la fin du laboratoire :
+
+* supprimer la fonction **Lambda**
+* supprimer l’API Gateway
+* supprimer la table **DynamoDB**
+* supprimer le rôle IAM si nécessaire
+
+# Compétences acquises
+
+À la fin de ce laboratoire, les étudiants sont capables de :
+
+* créer une application **serverless complète**
+* utiliser **DynamoDB comme base NoSQL**
+* connecter Lambda à DynamoDB
+* exposer une API via **API Gateway**
+* comprendre une architecture moderne **cloud-native et scalable**
