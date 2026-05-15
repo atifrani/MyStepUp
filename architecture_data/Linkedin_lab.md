@@ -187,4 +187,4 @@ Un dépôt github détaillant :
 Le projet doit être réalisé en binôme, avec une répartition équitable des tâches. Les livrables identiques entre groupes seront considérés comme du plagiat et sanctionnés en conséquence.
 
 ## 📬 Soumission
-Envoyez votre livrable avec intitulé **MBAESG_EVALUATION_ARCHITECTURE_BIGDATA** à l'adresse suivante : axel@logbrain.fr
+Envoyez votre livrable avec intitulé **ESME_EVALUATION_ARCHITECTURE_BIGDATA_2026** à l'adresse suivante : axel@logbrain.fr
