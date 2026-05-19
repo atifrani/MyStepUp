@@ -13,7 +13,7 @@ st.set_page_config(page_title="Analyse des données du Titanic avec DuckDB", lay
 st.title("Analyse des données du Titanic avec DuckDB et Streamlit")
 st.write("Cette application analyse les données des passagers du Titanic en utilisant DuckDB et Streamlit.")
 
-# Fonction pour charger les données de démonstration du Titanic
+# Fonction pour charger les données de démonstration du Titanic 
 def charger_donnees_titanic_demo():
     # URL des données Titanic de démonstration
     url = "https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv"
@@ -300,7 +300,6 @@ fig = px.bar(
 fig.update_traces(texttemplate='%{text}%', textposition='outside')
 
 st.plotly_chart(fig, use_container_width=True)
-
 
 # Exporter les données
 st.header("Exporter les données")
