@@ -48,13 +48,13 @@ sudo yum install git -y
 4.2. Cloner le dépôt
 
 ```bash
-git clone https://github.com/atifrani/final-workshop.git
+git clone https://github.com/atifrani/MyStepUp.git
 ```
 
 4.3 Créer un environnement virtuel Python
 
 ```bash
-cd final-workshop
+cd MyStepUp/services_cloud/final-workshop
 
 python3 -m venv venv
 
