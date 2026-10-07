@@ -4,15 +4,6 @@
 >
 > **Aucune connaissance en informatique n'est nécessaire pour commencer.** Chaque notion est présentée en cours, démontrée en direct, puis pratiquée en classe.
 
-## 👨‍🏫 Votre professeur
-
-- Architecte solutions Data, IA et Cloud.
-- 15 ans d'expérience en big data et cloud computing.
-- Professeur en Big Data et cloud computing (ECE, ESME, MBA ESG, ESCP).
-- Fondateur de Logbrain (cabinet de conseil en big data et cloud computing).
-
-![Axel](images/axel.jpg)
-
 ---
 
 ## 🗺️ Le programme
