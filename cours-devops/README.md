@@ -6,7 +6,7 @@
 
 ## 👨‍🏫 Votre professeur
 
-- Architecte solutions Data et Cloud.
+- Architecte solutions Data, IA et Cloud.
 - 15 ans d'expérience en big data et cloud computing.
 - Professeur en Big Data et cloud computing (ECE, ESME, MBA ESG, ESCP).
 - Fondateur de Logbrain (cabinet de conseil en big data et cloud computing).
@@ -30,13 +30,13 @@ flowchart LR
 
 | Chapitre | Au programme | Durée | Titre à décrocher |
 |---|---|---|---|
-| [**1 · Introduction au DevOps**](1.DEVOPS.md) | Les défis, les enjeux et les origines du DevOps (et de l'Agilité) | 2h | 🧱 Briseur de murs |
-| [**2 · EDI et Visual Studio Code**](2.EDI.md) | Définition et composants d'un EDI, les EDI d'aujourd'hui, VS Code, premiers pas dans le terminal et en Markdown | 2h | 🛠️ Artisan de l'éditeur |
+| [**1 · Introduction au DevOps**](1.DEVOPS.md) | Les défis, les enjeux et les origines du DevOps (et de l'Agilité) | 1h | 🧱 Briseur de murs |
+| [**2 · EDI et Visual Studio Code**](2.EDI.md) | Définition et composants d'un EDI, les EDI d'aujourd'hui, VS Code, premiers pas dans le terminal et en Markdown | 1h | 🛠️ Artisan de l'éditeur |
 | [**3 · Introduction à Git**](3.GIT.md) | Vocabulaire, installation, premier commit, historique d'un dépôt et tags | 3h | ⏳ Maître du temps |
-| [**4 · Introduction à GitHub**](4.GITHUB.md) | Dépôt distant, travail en équipe, branches et Pull Requests, interfaces graphiques | 3h30 | 🤝 Joueur d'équipe |
-| [**5 · Streamlit**](5.STREAMLIT.md) | Créer une application web de données en Python | 4h | ☕📊 Barista de la data |
-| [**6 · DuckDB**](6.DUCKDB.md) | Interroger des données avec SQL | 3h30 | 🕵️🦆 Détective des données |
-| [**7 · dbt**](7.DBT.md) | Industrialiser les transformations de données | 4h | 🏗️ Architecte des données |
+| [**4 · Introduction à GitHub**](4.GITHUB.md) | Dépôt distant, travail en équipe, branches et Pull Requests, interfaces graphiques | 2h | 🤝 Joueur d'équipe |
+| [**5 · Streamlit**](5.STREAMLIT.md) | Créer une application web de données en Python | 2h | ☕📊 Barista de la data |
+| [**6 · DuckDB**](6.DUCKDB.md) | Interroger des données avec SQL | 3h | 🕵️🦆 Détective des données |
+| [**7 · dbt**](7.DBT.md) | Industrialiser les transformations de données | 2h | 🏗️ Architecte des données |
 
 > [!IMPORTANT]
 > **Avant chaque séance**, regardez la rubrique **💻 À préparer avant la séance** en haut du chapitre, et la rubrique **🏠 Avant la prochaine séance** à la fin du chapitre précédent : certaines installations (VS Code, Git, compte GitHub, Python...) doivent être faites **avant** d'arriver en cours.
