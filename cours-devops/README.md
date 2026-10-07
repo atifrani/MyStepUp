@@ -35,8 +35,8 @@ flowchart LR
 | [**3 · Introduction à Git**](3.GIT.md) | Vocabulaire, installation, premier commit, historique d'un dépôt et tags | 3h | ⏳ Maître du temps |
 | [**4 · Introduction à GitHub**](4.GITHUB.md) | Dépôt distant, travail en équipe, branches et Pull Requests, interfaces graphiques | 2h | 🤝 Joueur d'équipe |
 | [**5 · Streamlit**](5.STREAMLIT.md) | Créer une application web de données en Python | 2h | ☕📊 Barista de la data |
-| [**6 · DuckDB**](6.DUCKDB.md) | Interroger des données avec SQL | 3h | 🕵️🦆 Détective des données |
-| [**7 · dbt**](7.DBT.md) | Industrialiser les transformations de données | 2h | 🏗️ Architecte des données |
+| [**6 · DuckDB**](6.DUCKDB.md) | Interroger des données avec SQL | 2h | 🕵️🦆 Détective des données |
+| [**7 · dbt**](7.DBT.md) | Industrialiser les transformations de données | 3h | 🏗️ Architecte des données |
 
 > [!IMPORTANT]
 > **Avant chaque séance**, regardez la rubrique **💻 À préparer avant la séance** en haut du chapitre, et la rubrique **🏠 Avant la prochaine séance** à la fin du chapitre précédent : certaines installations (VS Code, Git, compte GitHub, Python...) doivent être faites **avant** d'arriver en cours.
@@ -93,8 +93,3 @@ Les supports de cours servent de **trace écrite** : vous y retrouvez les points
 
 Dès le chapitre 1, la classe est répartie en **équipes de 4**, les mêmes que pour le projet d'évaluation. Tout au long du cours, les équipes marquent des points lors des quiz et des défis d'équipe. Le tableau des scores est tenu par le professeur... que la meilleure équipe gagne ! ☕
 
----
-
-## 🧑‍🏫 Espace enseignant
-
-Le dossier [`enseignant/`](enseignant/README.md) contient le guide du professeur : planning des séances, déroulés minutés, scripts de démonstration, réponses aux quiz, corrigés des exercices et règles du jeu des équipes.
