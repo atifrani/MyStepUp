@@ -35,13 +35,13 @@ Aucune connaissance en informatique n'est nécessaire pour commencer.
 
 | Chapitre | Au programme | Durée |
 |---|---|---|
-| [1 · Introduction au DevOps](cours-devops-git/1.DEVOPS.md) | Les défis, les enjeux et les origines du DevOps et de l'Agilité | 2h |
-| [2 · EDI et Visual Studio Code](cours-devops-git/2.EDI.md) | L'environnement de développement, VS Code, le terminal, Markdown | 2h |
+| [1 · Introduction au DevOps](cours-devops-git/1.DEVOPS.md) | Les défis, les enjeux et les origines du DevOps et de l'Agilité | 1h |
+| [2 · EDI et Visual Studio Code](cours-devops-git/2.EDI.md) | L'environnement de développement, VS Code, le terminal, Markdown | 1h |
 | [3 · Introduction à Git](cours-devops-git/3.GIT.md) | Premier commit, historique d'un dépôt, tags | 3h |
-| [4 · Introduction à GitHub](cours-devops-git/4.GITHUB.md) | Dépôt distant, branches, Pull Requests, travail en équipe | 3h30 |
-| [5 · Streamlit](cours-devops-git/5.STREAMLIT.md) | Créer une application web de données en Python | 4h |
-| [6 · DuckDB](cours-devops-git/6.DUCKDB.md) | Interroger des données avec SQL | 3h30 |
-| [7 · dbt](cours-devops-git/7.DBT.md) | Industrialiser les transformations de données | 4h |
+| [4 · Introduction à GitHub](cours-devops-git/4.GITHUB.md) | Dépôt distant, branches, Pull Requests, travail en équipe | 1h |
+| [5 · Streamlit](cours-devops-git/5.STREAMLIT.md) | Créer une application web de données en Python | 1h |
+| [6 · DuckDB](cours-devops-git/6.DUCKDB.md) | Interroger des données avec SQL | 2h |
+| [7 · dbt](cours-devops-git/7.DBT.md) | Industrialiser les transformations de données | 3h |
 
 📋 [Antisèche Git](cours-devops-git/MEMO-GIT.md) · 📖 [Glossaire](cours-devops-git/GLOSSAIRE.md) · 🏆 Projets d'évaluation : [application Streamlit + DuckDB](cours-devops-git/exercice_evaluation.md) et [Airbnb Analytics Platform](cours-devops-git/data-project.md)
 
@@ -53,14 +53,14 @@ La suite du cours DevOps : DataCafé a grandi, et ses données partent dans le c
 
 | Chapitre | Au programme | Durée |
 |---|---|---|
-| [1 · Des données à la décision](cours-architecture-data-snowflake/1.DONNEES-BI.md) | Données et information, Big Data, OLTP et OLAP, architecture BI | 3h |
-| [2 · Modéliser un entrepôt de données](cours-architecture-data-snowflake/2.MODELISATION.md) | Data warehouse, data mart, modèles en étoile et en flocon, ETL et ELT | 4h |
-| [3 · Premiers pas dans Snowflake](cours-architecture-data-snowflake/3.SNOWFLAKE.md) | Architecture de Snowflake, entrepôts virtuels, crédits, données JSON | 4h |
-| [4 · Charger et analyser des données massives](cours-architecture-data-snowflake/4.CITIBIKE.md) | Stages S3, `COPY INTO`, cache, clonage, Time Travel sur les données Citi Bike | 4h |
-| [5 · Automatiser les pipelines](cours-architecture-data-snowflake/5.PIPELINES.md) | Tasks, Streams, tables dynamiques, Snowpipe | 3h30 |
-| [6 · L'architecture médaillon](cours-architecture-data-snowflake/6.MEDAILLON.md) | Bronze, silver, gold sur les données Airbnb, contrôles qualité | 4h |
+| [1 · Des données à la décision](cours-architecture-data-snowflake/1.DONNEES-BI.md) | Données et information, Big Data, OLTP et OLAP, architecture BI | 1h |
+| [2 · Modéliser un entrepôt de données](cours-architecture-data-snowflake/2.MODELISATION.md) | Data warehouse, data mart, modèles en étoile et en flocon, ETL et ELT | 1h |
+| [3 · Premiers pas dans Snowflake](cours-architecture-data-snowflake/3.SNOWFLAKE.md) | Architecture de Snowflake, entrepôts virtuels, crédits, données JSON | 1h |
+| [4 · Charger et analyser des données massives](cours-architecture-data-snowflake/4.CITIBIKE.md) | Stages S3, `COPY INTO`, cache, clonage, Time Travel sur les données Citi Bike | 2h |
+| [5 · Automatiser les pipelines](cours-architecture-data-snowflake/5.PIPELINES.md) | Tasks, Streams, tables dynamiques, Snowpipe | 2h |
+| [6 · L'architecture médaillon](cours-architecture-data-snowflake/6.MEDAILLON.md) | Bronze, silver, gold sur les données Airbnb, contrôles qualité | 2h |
 | [7 · L'IA au service des données](cours-architecture-data-snowflake/7.CORTEX-IA.md) | Snowflake Cortex : traduction, sentiment, résumé, questions-réponses | 3h |
-| [8 · La boucle DevOps de la donnée](cours-architecture-data-snowflake/8.DATAOPS.md) | Environnements DEV et PROD, Snowflake branché sur GitHub, rôles et droits | 3h30 |
+| [8 · La boucle DevOps de la donnée](cours-architecture-data-snowflake/8.DATAOPS.md) | Environnements DEV et PROD, Snowflake branché sur GitHub, rôles et droits | 2h |
 
 📋 [Antisèche Snowflake](cours-architecture-data-snowflake/MEMO-SNOWFLAKE.md) · 📖 [Glossaire](cours-architecture-data-snowflake/GLOSSAIRE.md) · 🔐 [Se connecter à Snowflake](cours-architecture-data-snowflake/CONNEXION-SNOWFLAKE.md) · 🏆 [Projet LinkedIn](cours-architecture-data-snowflake/PROJET-LINKEDIN.md)
 
