@@ -1,81 +1,102 @@
-#top-banner {
-  color : rgb(255,255,255);
-    font-size: 30px;
+/* ==========================================================================
+   Variables
+   ========================================================================== */
 
-  background-color: rgba(30,30,30,0.7);
+:root {
+  --color-overlay: rgba(30, 30, 30, 0.7);
+  --color-border: #616161;
+  --color-button: #616161;
+  --color-text-light: #fff;
+  --color-text-dark: #000;
+  --color-hover-muted: #757575;
+
+  --font-main: "Lato", Arial, sans-serif;
+
+  --menu-width: 260px;
+  --content-offset: 300px;
+}
+
+/* ==========================================================================
+   Bandeau supérieur
+   ========================================================================== */
+
+#top-banner {
   overflow: auto;
+  border-color: var(--color-border);
+  background-color: var(--color-overlay);
+  color: var(--color-text-light);
+  font-size: 1.875rem; /* 30px */
   text-align: center;
 }
 
-#top-banner-img{
-  float:right;
+#top-banner-img {
+  float: right;
 }
 
-
+/* ==========================================================================
+   Menu latéral
+   ========================================================================== */
 
 #menu {
-  width: 260px;
+  position: absolute;
+  width: var(--menu-width);
   height: 100%;
-  border-right:1px solid #ccc;
-  font-family: "Lato";
-  font-weight: normal;
-  font-size: 18px;
   min-height: 500px;
-  background-color: rgba(30,30,30,0.7);
-  box-shadow: 3px 0px 5px rgba(0,0,0,.3);
-  position:absolute;
-  overflow:auto;
+  overflow: auto;
+  border-right: 1px solid var(--color-border);
+  background-color: var(--color-overlay);
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.3);
+  font-family: var(--font-main);
+  font-size: 1.125rem; /* 18px */
+  font-weight: normal;
 }
 
-#menu .menu-button {
-  padding:0.01em 16px 8px;
+.menu-button {
+  padding: 0.01em 16px 8px;
   line-height: 45px;
-  z-index: 5;
 }
 
-
-#menu .menu-button > a {
-  background-color:rgba(97,97,97,1);
-  color:#fff;
-  box-shadow: 1px 1px 4px rgba(0,0,0,.2);
-  cursor: pointer;
-  padding:4px 2px 4px 16px;
-  display:block;
-  -webkit-transition:all 0.3s ease,color 0.15s ease;
-  transition:all 0.3s ease,color 0.15s ease;
+.menu-button > a {
+  display: block;
+  padding: 4px 2px 4px 16px;
+  background-color: var(--color-button);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  color: var(--color-text-light);
   text-decoration: none;
+  transition: background-color 0.3s ease, color 0.15s ease;
 }
 
-#menu .menu-button > a:hover {
-  color:#000!important;
-  background-color:#FFFFFF!important;
-  text-decoration: none;
+.menu-button > a:hover,
+.menu-button > a:focus-visible {
+  background-color: var(--color-text-light);
+  color: var(--color-text-dark);
 }
 
 .menu-button-icon {
   width: 38px;
   height: 38px;
-  margin: 0px 10px -12px -5px;
+  margin: 0 10px -12px -5px;
 }
 
+/* ==========================================================================
+   Bouton d'ouverture du menu
+   ========================================================================== */
 
-#top-banner, #menu {
-  border-color:#616161;
-}
-
-
-#toggle-menu-button:hover {
-  color:#757575;
+#toggle-menu-button:hover,
+#toggle-menu-button:focus-visible {
+  color: var(--color-hover-muted);
 }
 
 #toggle-menu-button-label {
-  font-family: "Lato";
-  font-size: 14px;
+  font-family: var(--font-main);
+  font-size: 0.875rem; /* 14px */
 }
+
+/* ==========================================================================
+   Contenu principal
+   ========================================================================== */
 
 #content {
-  margin-left: 300px;
   margin-top: 40px;
+  margin-left: var(--content-offset);
 }
-
-
